@@ -1,9 +1,9 @@
 PREFIX := zeros-
 SUFFIX := .img.bz2
-ALL := ${PREFIX}1GB${SUFFIX} \
-	${PREFIX}2GB${SUFFIX} \
-	${PREFIX}4GB${SUFFIX} \
-	${PREFIX}8GB${SUFFIX} \
+ALL := ${PREFIX}01GB${SUFFIX} \
+	${PREFIX}02GB${SUFFIX} \
+	${PREFIX}04GB${SUFFIX} \
+	${PREFIX}08GB${SUFFIX} \
 	${PREFIX}16GB${SUFFIX} \
 	${PREFIX}32GB${SUFFIX} \
 
@@ -11,13 +11,13 @@ ALL := ${PREFIX}1GB${SUFFIX} \
 
 all: ${ALL}
 
-${PREFIX}1GB${SUFFIX}:
+${PREFIX}01GB${SUFFIX}:
 	./build-zero-file.sh 1M 1024 $@
-${PREFIX}2GB${SUFFIX}:
+${PREFIX}02GB${SUFFIX}:
 	./build-zero-file.sh 1M 2048 $@
-${PREFIX}4GB${SUFFIX}:
+${PREFIX}04GB${SUFFIX}:
 	./build-zero-file.sh 1M 4096 $@
-${PREFIX}8GB${SUFFIX}:
+${PREFIX}08GB${SUFFIX}:
 	./build-zero-file.sh 1M 8192 $@
 ${PREFIX}16GB${SUFFIX}:
 	./build-zero-file.sh 1M 16384 $@

@@ -26,9 +26,9 @@ Build the image:
 
     docker build . --tag zero-files-creator
 
-Build a single file (e.g. `zeros-1GB.img.bz2`):
+Build a single file (e.g. `zeros-01GB.img.bz2`):
 
-    docker run --rm -it --mount type=bind,source=.,target=/home/dev zero-files-creator 1M 1024 zeros-1GB.img.bz2
+    docker run --rm -it --mount type=bind,source=.,target=/home/dev zero-files-creator 1M 1024 zeros-01GB.img.bz2
 
 Build all files specified in the Makefile:
 
