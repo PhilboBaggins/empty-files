@@ -6,6 +6,7 @@ ALL := ${PREFIX}01GB${SUFFIX} \
 	${PREFIX}08GB${SUFFIX} \
 	${PREFIX}16GB${SUFFIX} \
 	${PREFIX}32GB${SUFFIX} \
+	${PREFIX}64GB${SUFFIX} \
 
 .PHONY: all clean
 
@@ -23,6 +24,8 @@ ${PREFIX}16GB${SUFFIX}:
 	./build-zero-file.sh 1M 16384 $@
 ${PREFIX}32GB${SUFFIX}:
 	./build-zero-file.sh 1M 32768 $@
+${PREFIX}64GB${SUFFIX}:
+	./build-zero-file.sh 1M 65536 $@
 
 clean:
 	rm -f ${ALL}
