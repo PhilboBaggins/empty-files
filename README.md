@@ -6,7 +6,7 @@ These files are useful for testing purposes or for zeroing out a disk (e.g on Wi
 
 To save disk space, the files are stored in a compressed format. So, when writing them to a disk, you'll need to decompress them first or use a program that automatically decompresses them while writing them to the disk.
 
-The files are named according to their size. For example, the file `zeros-1GB.img.bz2` contains 1 GB of zeros.q
+The files are named according to their size. For example, the file `zeros-1GB.img.bz2` contains 1 GB of zeros.
 
 ## Building
 
