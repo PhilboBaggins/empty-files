@@ -1,4 +1,4 @@
-PREFIX := blank-
+PREFIX := zeros-
 SUFFIX := .img.bz2
 ALL := ${PREFIX}1GB${SUFFIX} ${PREFIX}2GB${SUFFIX} ${PREFIX}4GB${SUFFIX} ${PREFIX}8GB${SUFFIX} ${PREFIX}16GB${SUFFIX}
 
@@ -7,15 +7,15 @@ ALL := ${PREFIX}1GB${SUFFIX} ${PREFIX}2GB${SUFFIX} ${PREFIX}4GB${SUFFIX} ${PREFI
 all: ${ALL}
 
 ${PREFIX}1GB${SUFFIX}:
-	./build-empty-image.sh 1M 1024 $@
+	./build-zero-file.sh 1M 1024 $@
 ${PREFIX}2GB${SUFFIX}:
-	./build-empty-image.sh 1M 2048 $@
+	./build-zero-file.sh 1M 2048 $@
 ${PREFIX}4GB${SUFFIX}:
-	./build-empty-image.sh 1M 4096 $@
+	./build-zero-file.sh 1M 4096 $@
 ${PREFIX}8GB${SUFFIX}:
-	./build-empty-image.sh 1M 8192 $@
+	./build-zero-file.sh 1M 8192 $@
 ${PREFIX}16GB${SUFFIX}:
-	./build-empty-image.sh 1M 16384 $@
+	./build-zero-file.sh 1M 16384 $@
 
 clean:
 	rm -f ${ALL}
