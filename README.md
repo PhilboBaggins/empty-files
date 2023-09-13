@@ -18,7 +18,7 @@ If you're building on a Unix like operating system with `make`, `dd` and a shell
 
 ### Building with Docker or Podman
 
-If you're using an operating systems (like Windows) which doesn't have easy access to the `dd` and the `/dev/zero`, then you may want to build inside a virtual machine or a container.
+If you're using an operating systems (like Windows) which doesn't have easy access to the `dd` command or the `/dev/zero` special file, then you may want to build inside a virtual machine or a container.
 
 Example commands for building with Docker are provided below. If you're using [Podman](https://podman.io/) instead of [Docker](https://www.docker.com/), simply substitute `docker` in the commands below for `podman`.
 
